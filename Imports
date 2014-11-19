@@ -1,0 +1,33 @@
+/* Plugins can be imported individually like this */
+    import com.greensock.TimelineMax;
+    import com.greensock.TweenMax;
+    import com.greensock.text.SplitTextField;
+    import com.greensock.TweenAlign;
+    import com.greensock.loading.*; 
+        /* the Asterisk* means all is pulled from the file */
+    import com.greensock.easing.*;
+
+/* Plugins can be imported individually like this */
+    import com.greensock.plugins.FilterPlugin;
+    import com.greensock.plugins.TweenPlugin;
+    import com.greensock.plugins.BlurFilterPlugin;
+    import com.greensock.plugins.AutoAlphaPlugin;
+    import com.greensock.plugins.GlowFilterPlugin;
+    import com.greensock.plugins.ColorTransformPlugin;
+    import com.greensock.plugins.TransformAroundCenterPlugin;
+    import com.greensock.plugins.TransformAroundPointPlugin;
+
+
+
+/* Or ad * and import all, then activate them manually. */
+    import com.greensock.plugins.*; 
+        TweenPlugin.activate([
+            TransformAroundPointPlugin, 
+            TransformAroundCenterPlugin, 
+            BlurFilterPlugin, 
+            ColorTransformPlugin, 
+            AutoAlphaPlugin, 
+            GlowFilterPlugin, 
+            EndArrayPlugin, 
+            ColorMatrixFilterPlugin
+            ]);
